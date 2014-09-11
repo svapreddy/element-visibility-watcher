@@ -7,7 +7,7 @@ Event to fire when an Element has come visible from invisible state or vice vers
 Example usage :
     
      <script src="lib/ractive.js"></script>
-	   <script src="lib/in-view.js"></script>
+     <script src="lib/in-view.js"></script>
 	   
 	   
 Then use it like below  
