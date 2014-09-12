@@ -19,3 +19,9 @@ Then use it like below
         event.original.previous // Previous state
         event.original.visible // visibility state, you can use event.original.current
      });
+
+Please checkout http://svapreddy.github.io/ractive-event-viewport for more details.
+
+<b>Limitations</b>
+
+It does not work, if the target element's any of the parents have 0px height. Will fix it.
