@@ -31,4 +31,4 @@ The library registers viewport event when it is loaded. Event listener can be ad
 
 Check [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Creating_an_intersection_observer) for available `data` values.
 
-Note: The bundle contains Intersection Observer API [polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill)
+*Note*: The bundle contains Intersection Observer API [polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill)
