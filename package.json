@@ -1,6 +1,6 @@
 {
   "name": "element-visibility-watcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Triggers an event when an element enters/leaves the screen",
   "main": "dist/ElementVisibilityWatcher.js",
   "directories": {
