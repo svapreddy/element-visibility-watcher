@@ -1,6 +1,6 @@
 import 'intersection-observer'
 
-class ElementVisibilityObserver {
+class ElementVisibilityWatcher {
   constructor (observerOptions = {}) {
     this.observerOptions = Object.assign({
       root: null,
@@ -79,4 +79,4 @@ class ElementVisibilityObserver {
   }
 }
 
-export default ElementVisibilityObserver
+export default ElementVisibilityWatcher

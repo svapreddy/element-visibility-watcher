@@ -15,8 +15,8 @@ const config = {
 }
 
 const distFolder = 'dist'
-const bundleName = 'ElementVisibilityObserver'
-const globalVariableName = 'ElementVisibilityObserver'
+const bundleName = 'ElementVisibilityWatcher'
+const globalVariableName = 'ElementVisibilityWatcher'
 
 let defaultConfig = [{
   input: 'src/index.js',

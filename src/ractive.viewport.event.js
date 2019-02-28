@@ -1,6 +1,6 @@
-import ElementVisibilityObserver from './visibility.observer'
+import ElementVisibilityWatcher from './visibility.observer'
 
-let visibilityObserver = new ElementVisibilityObserver()
+let visibilityObserver = new ElementVisibilityWatcher()
 
 const viewport = (node, fire) => {
   visibilityObserver.watch(node, (visible, data) => {
@@ -19,6 +19,6 @@ const viewport = (node, fire) => {
   }
 }
 
-if (window.Ractive) {
+if (window.Ractive && window.Ractive.events && !window.Ractive.events.viewport) {
   window.Ractive.events.viewport = viewport
 }

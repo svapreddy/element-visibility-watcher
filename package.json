@@ -1,8 +1,8 @@
 {
-  "name": "element-visibility-observer",
+  "name": "element-visibility-watcher",
   "version": "1.0.0",
   "description": "Triggers an event when an element enters/leaves the screen",
-  "main": "dist/ElementVisibilityObserver.js",
+  "main": "dist/ElementVisibilityWatcher.js",
   "directories": {
     "lib": "lib"
   },
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/svapreddy/element-visibility-observer.git"
+    "url": "git+https://github.com/svapreddy/element-visibility-watcher.git"
   },
   "author": "Prathap Reddy (svap.reddy@hotmail.com)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/svapreddy/element-visibility-observer/issues"
+    "url": "https://github.com/svapreddy/element-visibility-watcher/issues"
   },
-  "homepage": "https://github.com/svapreddy/element-visibility-observer#readme",
+  "homepage": "https://github.com/svapreddy/element-visibility-watcher#readme",
   "dependencies": {
     "intersection-observer": "^0.5.1"
   },
