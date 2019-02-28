@@ -1,6 +1,6 @@
 {
   "name": "element-visibility-watcher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Triggers an event when an element enters/leaves the screen",
   "main": "dist/ElementVisibilityWatcher.js",
   "directories": {
@@ -33,5 +33,6 @@
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-standard": "^1.0.0",
     "rollup-plugin-uglify": "^6.0.2"
-  }
+  },
+  "keywords": ["ractive", "visibility", "intersection observer api"]
 }
