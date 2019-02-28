@@ -2,7 +2,7 @@
 <div align="center"> Element visibility watcher utilising Intersection Observer API. </div>
 <br />
 
-An Event iss triggered when there is a change in visibility state.
+An Callback or Event is triggered when there is a change in visibility state of an Element.
 
 #### Vanilla JS Usage:
 
