@@ -2,7 +2,11 @@
 <div align="center"> Element visibility watcher utilising Intersection Observer API. </div>
 <br />
 
+An Event iss triggered when there is a change in visibility state.
+
 #### Vanilla JS Usage:
+
+Example [fiddle](http://jsfiddle.net/reddyp/vz1Ljmew/11/)
 
 ```javascript
   import ElementVisibilityWatcher from 'element-visibility-watcher'
@@ -20,13 +24,27 @@ Check [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/A
 #### Ractive JS Usage:
 The library registers viewport event when it is loaded. Event listener can be added using `on-viewport` like below
 
+Example [fiddle](http://jsfiddle.net/reddyp/29axokfg/14/)
+
 ```javascript
   import 'element-visibility-watcher'
   
-  <div on-viewport="someFunc"></div>
+  const ractive = new Ractive({
+    el: "#body",
+    template: "#scroller",
+    data: {
+      list: dummyData
+    },
+    visibilityCheck: function(event) {
+      console.log(event.original.intersectionData, event.original.visible)
+    }
+  })
+  
+  // in HTML:
+  <div on-viewport="@this.visibilityCheck(event)"></div>
   
   ractiveApp.on('someFunc', function(event){
-     event.original.data
+     event.original.intersectionData
      event.original.visible // visibility state. true / false
   })
 ```
