@@ -1,27 +1,34 @@
-ractive-event-viewport
-======================
+<h1 align="center">ElementVisibilityObserver</h1>
+<div align="center"> Element visibility listener using Intersection Observer API. </div>
+<br />
 
-Event to fire when an Element has come visible from invisible state or vice versa.
+#### Vanilla JS Usage:
 
+```javascript
+  import ElementVisibilityObserver from 'element-visibility-observer'
+  let observer = new ElementVisibilityObserver(options)
+  
+  let nodeToWatch = document.getElementById('thumbnail')
+  observer.watch(nodeToWatch, function(visible, data) {
+    console.log(data)
+  })
+```
+Check [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Creating_an_intersection_observer) for available `options` and `data` values.
 
-Example usage :
-    
-     <script src="lib/ractive.js"></script>
-     <script src="lib/in-view.js"></script>
-	   
-	   
-Then use it like below  
-      
-     <div on-viewport="someFunc"></div>
-     
-     ractiveObj.on('someFunc', function(event){
-        event.original.current // Current state
-        event.original.previous // Previous state
-        event.original.visible // visibility state, you can use event.original.current
-     });
+#### Ractive JS Usage:
+The library registers viewport event when it is loaded. Event listener can be added using `on-viewport` like below
 
-Please checkout http://svapreddy.github.io/ractive-event-viewport for more details.
+```javascript
+  import 'element-visibility-observer'
+  
+  <div on-viewport="someFunc"></div>
+  
+  ractiveApp.on('someFunc', function(event){
+     event.original.data
+     event.original.visible // visibility state. true / false
+  })
+```
 
-<b>Limitations</b>
+Check [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Creating_an_intersection_observer) for available `data` values.
 
-It does not work, if the target element's any of the parents have 0px height. Will fix it.
+Note: The bundle contains Intersection Observer API [polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill)
