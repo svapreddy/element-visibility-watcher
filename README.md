@@ -42,11 +42,6 @@ Example [fiddle](http://jsfiddle.net/reddyp/29axokfg/14/)
   
   // in HTML:
   <div on-viewport="@this.visibilityCheck(event)"></div>
-  
-  ractiveApp.on('someFunc', function(event){
-     event.original.intersectionData
-     event.original.visible // visibility state. true / false
-  })
 ```
 
 Check [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Creating_an_intersection_observer) for available `data` values.
