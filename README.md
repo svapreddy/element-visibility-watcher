@@ -1,4 +1,4 @@
-<h1 align="center">ElementVisibilityObserver</h1>
+<h2 align="center">ElementVisibilityObserver</h2>
 <div align="center"> Element visibility listener using Intersection Observer API. </div>
 <br />
 
