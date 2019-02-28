@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/svapreddy/ractive-event-viewport.git"
+    "url": "git+https://github.com/svapreddy/element-visibility-observer.git"
   },
   "author": "Prathap Reddy (svap.reddy@hotmail.com)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/svapreddy/ractive-event-viewport/issues"
+    "url": "https://github.com/svapreddy/element-visibility-observer/issues"
   },
-  "homepage": "https://github.com/svapreddy/ractive-event-viewport#readme",
+  "homepage": "https://github.com/svapreddy/element-visibility-observer#readme",
   "dependencies": {
     "intersection-observer": "^0.5.1"
   },
