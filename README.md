@@ -6,6 +6,8 @@
 
 ```javascript
   import ElementVisibilityWatcher from 'element-visibility-watcher'
+  
+  // options are optional. By the default it will listen for elements inside the parent document
   let observer = new ElementVisibilityWatcher(options)
   
   let nodeToWatch = document.getElementById('thumbnail')
