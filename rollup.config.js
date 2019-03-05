@@ -61,7 +61,7 @@ let defaultConfig = [{
       sourcemap: true,
       file: path.join(distFolder, `/${bundleName}.js`),
       name: globalVariableName,
-      format: 'iife'
+      format: 'umd'
     }
   ],
   watch: {
